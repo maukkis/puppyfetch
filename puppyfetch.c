@@ -274,7 +274,7 @@ void get_cpuinfo_cpuid(char *buf) {
       "mov [rdi+36], ebx\n"
       "mov [rdi+40], ecx\n"
       "mov [rdi+44], edx\n"
-      : "=rdi" (buf)
+      : "=D" (buf)
       :
       : "eax", "ebx", "ecx", "edx"
     );
